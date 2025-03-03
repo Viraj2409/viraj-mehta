@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - University of Excellence</title>
+  <link rel="stylesheet" href="academics.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>University of Excellence</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="collage.html">Home</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="academics.html" class="active">Academics</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Academics</h1>
+      <p>Excellence in teaching, learning, and research</p>
+    </div>
+  </section>
+
+  <section class="academics-intro">
+    <div class="container">
+      <h2>World-Class Education</h2>
+      <p>At the University of Excellence, we offer a rigorous and innovative academic experience designed to challenge and inspire. Our distinguished faculty are leaders in their fields, committed to both teaching and groundbreaking research. With small class sizes and a focus on experiential learning, our students develop the knowledge, skills, and perspectives needed to succeed in an ever-changing world.</p>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Academic Programs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">92%</div>
+          <div class="stat-label">Faculty with Terminal Degrees</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">85%</div>
+          <div class="stat-label">Classes with Fewer than 30 Students</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="colleges-section">
+    <div class="container">
+      <h2>Our Colleges and Schools</h2>
+      <div class="colleges-grid">
+        <div class="college-card" id="arts-sciences">
+          <div class="college-icon"></div>
+          <h3>College of Arts & Sciences</h3>
+          <p>Offering a diverse range of programs in humanities, social sciences, and natural sciences, fostering critical thinking and creative problem-solving.</p>
+          <button class="college-btn" data-college="arts-sciences">Explore Programs</button>
+        </div>
+        <div class="college-card" id="business">
+          <div class="college-icon"></div>
+          <h3>School of Business</h3>
+          <p>Preparing future business leaders through innovative curriculum, experiential learning, and strong industry connections.</p>
+          <button class="college-btn" data-college="business">Explore Programs</button>
+        </div>
+        <div class="college-card" id="engineering">
+          <div class="college-icon"></div>
+          <h3>College of Engineering</h3>
+          <p>Advancing technological innovation through rigorous programs that combine theory with hands-on application and research.</p>
+          <button class="college-btn" data-college="engineering">Explore Programs</button>
+        </div>
+        <div class="college-card" id="health">
+          <div class="college-icon"></div>
+          <h3>School of Health Sciences</h3>
+          <p>Training healthcare professionals and researchers dedicated to improving health outcomes and advancing medical knowledge.</p>
+          <button class="college-btn" data-college="health">Explore Programs</button>
+        </div>
+        <div class="college-card" id="education">
+          <div class="college-icon"></div>
+          <h3>College of Education</h3>
+          <p>Developing innovative educators and leaders committed to excellence and equity in education at all levels.</p>
+          <button class="college-btn" data-college="education">Explore Programs</button>
+        </div>
+        <div class="college-card" id="fine-arts">
+          <div class="college-icon"></div>
+          <h3>School of Fine Arts</h3>
+          <p>Nurturing artistic talent and creative expression through programs in visual arts, music, theater, and design.</p>
+          <button class="college-btn" data-college="fine-arts">Explore Programs</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs-highlight">
+    <div class="container">
+      <h2>Featured Academic Programs</h2>
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="undergraduate">Undergraduate</button>
+          <button class="tab-btn" data-tab="graduate">Graduate</button>
+          <button class="tab-btn" data-tab="online">Online</button>
+          <button class="tab-btn" data-tab="certificate">Certificate</button>
+        </div>
+        <div class="tab-content active" id="undergraduate-content">
+          <div class="programs-grid">
+            <div class="program-item">
+              <h3>Computer Science, B.S.</h3>
+              <p>Develop expertise in programming, algorithms, artificial intelligence, and software engineering.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Business Administration, B.B.A.</h3>
+              <p>Build a foundation in management, marketing, finance, and entrepreneurship.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Psychology, B.A.</h3>
+              <p>Explore human behavior, cognition, development, and psychological research methods.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Environmental Science, B.S.</h3>
+              <p>Study ecosystems, sustainability, and solutions to environmental challenges.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="graduate-content">
+          <div class="programs-grid">
+            <div class="program-item">
+              <h3>Business Analytics, M.S.</h3>
+              <p>Master data analysis, predictive modeling, and business intelligence techniques.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Mechanical Engineering, M.Eng.</h3>
+              <p>Advance your knowledge in design, thermodynamics, and mechanical systems.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Clinical Psychology, Ph.D.</h3>
+              <p>Prepare for research and practice in assessment, therapy, and psychological science.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Public Health, M.P.H.</h3>
+              <p>Develop skills to address health challenges at community and global levels.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="online-content">
+          <div class="programs-grid">
+            <div class="program-item">
+              <h3>Data Science, M.S. (Online)</h3>
+              <p>Learn advanced techniques in data analysis, machine learning, and visualization.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Nursing, R.N. to B.S.N. (Online)</h3>
+              <p>Advance your nursing career with flexible online coursework designed for working professionals.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Educational Leadership, M.Ed. (Online)</h3>
+              <p>Prepare for leadership roles in education while maintaining your current position.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Business Administration, M.B.A. (Online)</h3>
+              <p>Develop advanced business skills through our flexible, accredited online MBA program.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="certificate-content">
+          <div class="programs-grid">
+            <div class="program-item">
+              <h3>Cybersecurity Certificate</h3>
+              <p>Gain essential skills in network security, ethical hacking, and digital forensics.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Project Management Certificate</h3>
+              <p>Master methodologies and tools for successful project planning and execution.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>TESOL Certificate</h3>
+              <p>Prepare to teach English to speakers of other languages in diverse settings.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-item">
+              <h3>Digital Marketing Certificate</h3>
+              <p>Develop skills in social media, SEO, content marketing, and analytics.</p>
+              <a href="#" class="program-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="academic-resources">
+    <div class="container">
+      <h2>Academic Resources</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon" id="library-icon"></div>
+          <h3>University Library</h3>
+          <p>Access millions of books, journals, and digital resources, along with expert research assistance and study spaces.</p>
+          <a href="#" class="resource-link">Visit Library</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon" id="advising-icon"></div>
+          <h3>Academic Advising</h3>
+          <p>Receive personalized guidance on course selection, degree requirements, and academic planning.</p>
+          <a href="#" class="resource-link">Meet with an Advisor</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon" id="tutoring-icon"></div>
+          <h3>Tutoring Center</h3>
+          <p>Get support in challenging courses through one-on-one tutoring, study groups, and workshops.</p>
+          <a href="#" class="resource-link">Schedule Tutoring</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon" id="writing-icon"></div>
+          <h3>Writing Center</h3>
+          <p>Improve your writing skills with feedback and guidance from trained writing consultants.</p>
+          <a href="#" class="resource-link">Make an Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faculty-spotlight">
+    <div class="container">
+      <h2>Faculty Spotlight</h2>
+      <div class="faculty-slider">
+        <div class="faculty-slide active">
+          <div class="faculty-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')"></div>
+          <div class="faculty-info">
+            <h3>Dr. Sarah Johnson</h3>
+            <p class="faculty-title">Professor of Computer Science</p>
+            <p class="faculty-bio">Dr. Johnson's research focuses on artificial intelligence and machine learning applications in healthcare. She has published over 50 papers and received the National Science Foundation CAREER Award.</p>
+            <a href="#" class="faculty-link">Faculty Profile</a>
+          </div>
+        </div>
+        <div class="faculty-slide">
+          <div class="faculty-image" style="background-image: url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')"></div>
+          <div class="faculty-info">
+            <h3>Dr. Michael Rodriguez</h3>
+            <p class="faculty-title">Associate Professor of Environmental Science</p>
+            <p class="faculty-bio">Dr. Rodriguez studies climate change impacts on coastal ecosystems. His work has been featured in Nature and Science, and he leads the University's Climate Research Initiative.</p>
+            <a href="#" class="faculty-link">Faculty Profile</a>
+          </div>
+        </div>
+        <div class="faculty-slide">
+          <div class="faculty-image" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')"></div>
+          <div class="faculty-info">
+            <h3>Dr. Emily Chen</h3>
+            <p class="faculty-title">Professor of Economics</p>
+            <p class="faculty-bio">Dr. Chen specializes in behavioral economics and public policy. She has served as an advisor to the Federal Reserve and is the author of three books on economic decision-making.</p>
+            <a href="#" class="faculty-link">Faculty Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn prev-btn">&lt;</button>
+        <div class="slider-dots">
+          <span class="slider-dot active" data-slide="0"></span>
+          <span class="slider-dot" data-slide="1"></span>
+          <span class="slider-dot" data-slide="2"></span>
+        </div>
+        <button class="slider-btn next-btn">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="global-education">
+    <div class="container">
+      <h2>Global Education Opportunities</h2>
+      <p class="section-intro">Expand your horizons through international experiences that enhance your academic journey and prepare you for global citizenship.</p>
+      <div class="global-options">
+        <div class="global-card">
+          <div class="global-image" style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="global-content">
+            <h3>Study Abroad</h3>
+            <p>Choose from over 100 programs in 45 countries, with options ranging from two weeks to a full academic year.</p>
+            <a href="#" class="global-link">Explore Programs</a>
+          </div>
+        </div>
+        <div class="global-card">
+          <div class="global-image" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="global-content">
+            <h3>International Internships</h3>
+            <p>Gain professional experience while immersing yourself in a new culture through our global internship partnerships.</p>
+            <a href="#" class="global-link">Find Opportunities</a>
+          </div>
+        </div>
+        <div class="global-card">
+          <div class="global-image" style="background-image: url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="global-content">
+            <h3>Global Research</h3>
+            <p>Participate in faculty-led research projects addressing global challenges in locations around the world.</p>
+            <a href="#" class="global-link">Research Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="academic-calendar">
+    <div class="container">
+      <h2>Academic Calendar</h2>
+      <div class="calendar-tabs">
+        <button class="calendar-tab active" data-term="fall">Fall 2025</button>
+        <button class="calendar-tab" data-term="spring">Spring 2026</button>
+        <button class="calendar-tab" data-term="summer">Summer 2026</button>
+      </div>
+      <div class="calendar-content active" id="fall-content">
+        <div class="calendar-events">
+          <div class="calendar-event">
+            <div class="event-date">August 25</div>
+            <div class="event-details">
+              <h4>Classes Begin</h4>
+              <p>First day of fall semester classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">September 1</div>
+            <div class="event-details">
+              <h4>Labor Day</h4>
+              <p>University closed, no classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">October 14-15</div>
+            <div class="event-details">
+              <h4>Fall Break</h4>
+              <p>No classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">November 24-28</div>
+            <div class="event-details">
+              <h4>Thanksgiving Break</h4>
+              <p>No classes, university offices closed November 26-28</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">December 10</div>
+            <div class="event-details">
+              <h4>Last Day of Classes</h4>
+              <p>Final day of fall semester instruction</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">December 13-18</div>
+            <div class="event-details">
+              <h4>Final Examinations</h4>
+              <p>Fall semester final exam period</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-content" id="spring-content">
+        <div class="calendar-events">
+          <div class="calendar-event">
+            <div class="event-date">January 12</div>
+            <div class="event-details">
+              <h4>Classes Begin</h4>
+              <p>First day of spring semester classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">January 18</div>
+            <div class="event-details">
+              <h4>MLK Day</h4>
+              <p>University closed, no classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">March 7-14</div>
+            <div class="event-details">
+              <h4>Spring Break</h4>
+              <p>No classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">April 30</div>
+            <div class="event-details">
+              <h4>Last Day of Classes</h4>
+              <p>Final day of spring semester instruction</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">May 3-8</div>
+            <div class="event-details">
+              <h4>Final Examinations</h4>
+              <p>Spring semester final exam period</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">May 15</div>
+            <div class="event-details">
+              <h4>Commencement</h4>
+              <p>University-wide graduation ceremony</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-content" id="summer-content">
+        <div class="calendar-events">
+          <div class="calendar-event">
+            <div class="event-date">May 24</div>
+            <div class="event-details">
+              <h4>Session I Begins</h4>
+              <p>First day of Summer Session I classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">May 31</div>
+            <div class="event-details">
+              <h4>Memorial Day</h4>
+              <p>University closed, no classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">June 30</div>
+            <div class="event-details">
+              <h4>Session I Ends</h4>
+              <p>Last day of Summer Session I</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">July 6</div>
+            <div class="event-details">
+              <h4>Session II Begins</h4>
+              <p>First day of Summer Session II classes</p>
+            </div>
+          </div>
+          <div class="calendar-event">
+            <div class="event-date">August 13</div>
+            <div class="event-details">
+              <h4>Session II Ends</h4>
+              <p>Last day of Summer Session II</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Academic Inquiries</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Office of Academic Affairs</h3>
+          <p><strong>Address:</strong> 123 University Avenue, Collegetown, ST 12345</p>
+          <p><strong>Phone:</strong> (123) 456-7891</p>
+          <p><strong>Email:</strong> academics@universityofexcellence.edu</p>
+          <p><strong>Hours:</strong> Monday-Friday, 8:30 AM - 5:00 PM</p>
+          
+          <h3>Schedule an Appointment</h3>
+          <p>Meet with an academic advisor to discuss program requirements, course selection, and academic planning.</p>
+          <button class="cta-secondary dark">Schedule Appointment</button>
+        </div>
+        <div class="contact-form">
+          <h3>Request Program Information</h3>
+          <form id="academics-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="program-interest">Program of Interest</label>
+              <select id="program-interest" name="program-interest">
+                <option value="">Select a program</option>
+                <option value="arts-sciences">Arts & Sciences</option>
+                <option value="business">Business</option>
+                <option value="engineering">Engineering</option>
+                <option value="health">Health Sciences</option>
+                <option value="education">Education</option>
+                <option value="fine-arts">Fine Arts</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="level">Academic Level</label>
+              <select id="level" name="level">
+                <option value="">Select level</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+                <option value="online">Online</option>
+                <option value="certificate">Certificate</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="questions">Questions</label>
+              <textarea id="questions" name="questions" rows="4"></textarea>
+            </div>
+            <button type="submit" class="cta-primary">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>123 University Avenue</p>
+        <p>Collegetown, ST 12345</p>
+        <p>info@universityofexcellence.edu</p>
+        <p>(123) 456-7890</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Campus Map</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Career Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon" id="facebook"></a>
+          <a href="#" class="social-icon" id="twitter"></a>
+          <a href="#" class="social-icon" id="instagram"></a>
+          <a href="#" class="social-icon" id="linkedin"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 University of Excellence. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="academics.js"></script>
+</body>
+</html>
