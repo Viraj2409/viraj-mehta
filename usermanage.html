@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="dashboard">
+        <header class="dashboard-header">
+          <h1>User Management</h1>
+          <div class="header-actions">
+            <div class="search-bar">
+              <input type="text" id="searchInput" placeholder="Search users...">
+              <select id="roleFilter">
+                <option value="all">All Roles</option>
+                <option value="admin">Admin</option>
+                <option value="reseller">Reseller</option>
+                <option value="user">User</option>
+              </select>
+              <select id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="pending">Pending</option>
+              </select>
+            </div>
+          </div>
+        </header>
+
+        <div class="users-table-container">
+          <table class="users-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Last Login</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="usersTableBody">
+              <!-- User rows will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Edit User Modal -->
+        <div id="editModal" class="modal">
+          <div class="modal-content">
+            <h2>Edit User</h2>
+            <form id="editUserForm">
+              <div class="form-group">
+                <label for="editName">Name</label>
+                <input type="text" id="editName" required>
+              </div>
+              <div class="form-group">
+                <label for="editEmail">Email</label>
+                <input type="email" id="editEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="editRole">Role</label>
+                <select id="editRole">
+                  <option value="admin">Admin</option>
+                  <option value="reseller">Reseller</option>
+                  <option value="user">User</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="editStatus">Status</label>
+                <select id="editStatus">
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                  <option value="pending">Pending</option>
+                </select>
+              </div>
+              <div class="modal-actions">
+                <button type="submit" class="btn-primary">Save Changes</button>
+                <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Delete Confirmation Modal -->
+        <div id="deleteModal" class="modal">
+          <div class="modal-content">
+            <h2>Confirm Delete</h2>
+            <p>Are you sure you want to delete this user? This action cannot be undone.</p>
+            <div class="modal-actions">
+              <button onclick="confirmDelete()" class="btn-danger">Delete</button>
+              <button onclick="closeModal()" class="btn-secondary">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

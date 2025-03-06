@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Management</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="dashboard">
+        <header class="dashboard-header">
+          <h1>Service Management</h1>
+          <div class="header-actions">
+            <div class="search-bar">
+              <input type="text" id="searchInput" placeholder="Search services...">
+              <select id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="vps">VPS</option>
+                <option value="proxy">Proxy</option>
+              </select>
+              <select id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="running">Running</option>
+                <option value="stopped">Stopped</option>
+                <option value="error">Error</option>
+              </select>
+            </div>
+            <button class="btn-primary" onclick="showAddServiceModal()">Add New Service</button>
+          </div>
+        </header>
+
+        <div class="services-table-container">
+          <table class="services-table">
+            <thead>
+              <tr>
+                <th>Service Name</th>
+                <th>Type</th>
+                <th>User</th>
+                <th>Configuration</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="servicesTableBody">
+              <!-- Service rows will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Add/Edit Service Modal -->
+        <div id="serviceModal" class="modal">
+          <div class="modal-content">
+            <h2 id="modalTitle">Add New Service</h2>
+            <form id="serviceForm">
+              <div class="form-group">
+                <label for="serviceName">Service Name</label>
+                <input type="text" id="serviceName" required>
+              </div>
+              <div class="form-group">
+                <label for="serviceType">Type</label>
+                <select id="serviceType" required>
+                  <option value="vps">VPS</option>
+                  <option value="proxy">Proxy</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="serviceUser">User</label>
+                <input type="text" id="serviceUser" required>
+              </div>
+              <div class="form-group">
+                <label for="serviceConfig">Configuration</label>
+                <textarea id="serviceConfig" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="serviceStatus">Status</label>
+                <select id="serviceStatus">
+                  <option value="running">Running</option>
+                  <option value="stopped">Stopped</option>
+                </select>
+              </div>
+              <div class="modal-actions">
+                <button type="submit" class="btn-primary">Save Service</button>
+                <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Delete Confirmation Modal -->
+        <div id="deleteModal" class="modal">
+          <div class="modal-content">
+            <h2>Confirm Delete</h2>
+            <p>Are you sure you want to delete this service? This action cannot be undone.</p>
+            <div class="modal-actions">
+              <button onclick="confirmDelete()" class="btn-danger">Delete</button>
+              <button onclick="closeModal()" class="btn-secondary">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/serviesmange.js"></script>
+  </body>
+</html>

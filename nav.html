@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#dashboard" class="nav-link active" data-section="dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link" data-section="services">Service Manager</a>
+        </li>
+        <li class="nav-item">
+          <a href="#users" class="nav-link" data-section="users">User Manager</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="dashboard" class="section active">
+        <h2>Dashboard</h2>
+        <p>Welcome to your dashboard. Here you can monitor all activities.</p>
+      </section>
+
+      <section id="services" class="section">
+        <h2>Service Manager</h2>
+        <p>Manage your services and monitor their status here.</p>
+      </section>
+
+      <section id="users" class="section">
+        <h2>User Manager</h2>
+        <p>Manage user accounts and permissions in this section.</p>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
